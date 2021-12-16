@@ -1,11 +1,12 @@
 
 {
     "scripts": {
-        "frontend:install": "cd udagram-frontend && npm install",
+        "frontend:install": "cd contacts-admin && npm install",
         "backend:install": "cd udagram-api && npm install",
-        "frontend:build": "cd udagram-frontend && npm run build",
+        "frontend:build": "cd contacts-admin && npm run build",
         "backend:build": "cd udagram-api && npm run build",
-        "frontend:deploy": "cd udagram-frontend && npm run deploy"
+        "frontend:deploy": "cd contacts-admin && npm run deploy",
+        "backend:deploy": "cd udagram-api && npm run deploy"
     },
     "devDependencies": {}
 }

@@ -1,0 +1,7 @@
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=javi2010
+POSTGRES_DB=postgres
+POSTGRES_HOST=database-2.ctubbgikwov3.us-east-1.rds.amazonaws.com
+POSTGRES_PORT=5432
+
+PORT=4000
