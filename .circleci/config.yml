@@ -10,23 +10,28 @@ jobs:
       - node/install
       - checkout
       - aws-cli/setup
-      - run:
+      - run: # Process to install front-end depencies
           name: Front-End Install
           command: |
             npm run frontend:install
-      - run:
+      - run: # Process to install back-end depencies
           name: Back-End Install
           command: |
             npm run backend:install
-      - run:
+      - run: # Process to build front-end
           name: Front-End Build
           command: |
             npm run frontend:build
-      - run:
+      - run: # Process to build back-end
           name: Back-End Build
           command: |
             npm run backend:build
-      - run:
+      - run: # Process to DEPLOY front-end
           name: Frontend Deploy
           command: |
             npm run frontend:deploy
+
+      - run: # Process to DEPLOY back-end
+          name: Frontend Deploy
+          command: |
+            npm run backend:deploy
