@@ -44,3 +44,8 @@ jobs:
           name: Frontend Deploy
           command: |
             npm run backend:deploy
+
+workflows:
+  contacts:
+    jobs:
+      - deploy
