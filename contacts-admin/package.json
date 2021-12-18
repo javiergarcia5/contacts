@@ -12,12 +12,12 @@
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "react-scripts": "^1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "CI=true react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "deploy": "bash bin/deploy.sh"
   }

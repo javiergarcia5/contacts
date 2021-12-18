@@ -17,14 +17,10 @@ const db = process.env.POSTGRES_DB;
 const host = process.env.POSTGRES_HOST;
 const port = process.env.POSTGRES_PORT;
 
-console.log( `Connection URL: postgres://${user}:${pwd}@${host}:${port}/${db}` );
-/*const sequelize = new Sequelize(
-  `postgres://${user}:${pwd}@${host}:${port}/${db}`
-);*/
+const connectionURL = `postgres://${user}:${pwd}@${host}:${port}/${db}`
 
-const sequelize = new Sequelize(
-  "postgres://postgres:javi2010@database-2.ctubbgikwov3.us-east-1.rds.amazonaws.com:5432/postgres"
-);
+console.log( `Connection URL: ${connectionURL}` );
+const sequelize = new Sequelize(connectionURL);
 
 class User extends Model {}
 

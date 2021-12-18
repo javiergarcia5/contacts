@@ -4,6 +4,8 @@
         "backend:install": "cd contacts-api && npm install",
         "frontend:build": "cd contacts-admin && npm run build",
         "backend:build": "cd contacts-api && npm run build",
+        "frontend:test": "cd contacts-admin && npm run test",
+        "backend:test": "cd contacts-api && npm run test",
         "frontend:deploy": "cd contacts-admin && npm run deploy",
         "backend:deploy": "cd contacts-api && npm run deploy"
     },

@@ -5,6 +5,7 @@
     "cors": "^2.8.5",
     "eb": "0.0.1",
     "express": "^4.16.4",
+    "jasmine": "^3.10.0",
     "nodemon": "^2.0.7",
     "pg": "^8.5.1",
     "sequelize": "^6.12.0-beta.2"
@@ -14,6 +15,7 @@
     "clean": "rm -rf www && mkdir www",
     "build": "npm run clean && cp -rf client/ www/client && cp -rf node_modules www/node_modules && cp -rf public/ www/public && cp config.js contacts.js server.js package.json www",
     "zip": "npm run build && cd www && zip -r -D ../app.zip *",
+    "test": "echo 'To be implemented'", 
     "deploy": "eb deploy"
   }
 }

@@ -27,6 +27,21 @@ jobs:
           command: |
             npm run backend:build
 
+  test:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - node/install
+      - checkout
+      - run: # Process to test front-end
+          name: Front-End Test
+          command: |
+            npm run frontend:test
+      - run: # Process to test back-end
+          name: Back-End Test
+          command: |
+            npm run backend:test
+
   deploy:
     docker:
       - image: "cimg/base:stable"
@@ -49,4 +64,5 @@ workflows:
   contacts:
     jobs:
       - build
+      - test
       - deploy
