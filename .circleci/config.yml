@@ -41,7 +41,7 @@ jobs:
           command: |
             npm run frontend:deploy
       - run: # Process to DEPLOY back-end
-          name: Frontend Deploy
+          name: Back-End Deploy
           command: |
             npm run backend:deploy
 
