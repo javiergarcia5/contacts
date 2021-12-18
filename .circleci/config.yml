@@ -35,22 +35,6 @@ jobs:
       - checkout
       - aws-cli/setup
       - eb/setup
-      - run: # Process to install front-end depencies
-          name: Front-End Install
-          command: |
-            npm run frontend:install
-      - run: # Process to install back-end depencies
-          name: Back-End Install
-          command: |
-            npm run backend:install
-      - run: # Process to build front-end
-          name: Front-End Build
-          command: |
-            npm run frontend:build
-      - run: # Process to build back-end
-          name: Back-End Build
-          command: |
-            npm run backend:build
       - run: # Process to DEPLOY front-end
           name: Frontend Deploy
           command: |
