@@ -17,6 +17,7 @@ We have called this job 'deploy'.
 This job is divided into multiple steps:
 - Front-End Install
 - Back-End Install
+- Set Env Vars to EB
 - Front-End Build
 - Back-End Build
 - Front-End Test
