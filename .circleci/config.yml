@@ -20,6 +20,10 @@ jobs:
           name: Back-End Install
           command: |
             npm run backend:install
+      - run: # Process to add env variables
+          name: Set Env Vars to EB
+          command: |
+            eb setenv POSTGRES_USER=$POSTGRES_USER POSTGRES_PASSWORD=$POSTGRPOSTGRES_PASSWORD
       - run: # Process to build front-end
           name: Front-End Build
           command: |
@@ -28,10 +32,6 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
-      - run: # Process to add env variables
-          name: Back-End Env Vars
-          command: |
-            npm run backend:set-env-vars
       - run: # Process to test front-end
           name: Front-End Test
           command: |
