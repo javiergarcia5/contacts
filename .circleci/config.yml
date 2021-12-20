@@ -23,7 +23,7 @@ jobs:
       - run: # Process to add env variables
           name: Set Env Vars to EB
           command: |
-            cd contacts-api && eb setenv POSTGRES_USER=$POSTGRES_USER POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+            npm run backend:set-env-vars
       - run: # Process to build front-end
           name: Front-End Build
           command: |
