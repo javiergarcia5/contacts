@@ -1,4 +1,5 @@
-# Contacts App
+# Contacts App [![javiergarcia5](https://circleci.com/gh/javiergarcia5/contacts.svg?style=svg)](https://app.circleci.com/pipelines/github/javiergarcia5/contacts)
+
 This is a demo app used for the final project of the last module (Deployment Process) of the Udacity's FullStack Javascript Nanodegree Program.
 
 In this project, we had to take a newly developed full stack application and deploy it to a cloud service provider so that it is available to customers. This application contains the main components of a 3-tier full stack application (UI, API, and Database).

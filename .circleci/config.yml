@@ -28,6 +28,10 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
+      - run: # Process to add env variables
+          name: Back-End Env Vars
+          command: |
+            npm run backend:set-env-vars
       - run: # Process to test front-end
           name: Front-End Test
           command: |
@@ -48,4 +52,7 @@ jobs:
 workflows:
   contacts:
     jobs:
-      - deploy
+      - deploy:
+        filters:
+          branches:
+            only: master

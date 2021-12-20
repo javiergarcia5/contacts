@@ -4,6 +4,7 @@
         "backend:install": "cd contacts-api && npm install",
         "frontend:build": "cd contacts-admin && npm run build",
         "backend:build": "cd contacts-api && npm run build",
+        "backend:set-env-vars": "cd contacts-api && npm run set-env-vars",
         "frontend:test": "cd contacts-admin && npm run test",
         "backend:test": "cd contacts-api && npm run test",
         "frontend:deploy": "cd contacts-admin && npm run deploy",
